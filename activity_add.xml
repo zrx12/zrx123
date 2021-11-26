@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ButtonAddCancel"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_weight="0"
+            android:background="@mipmap/quxiao" />
+
+        <Button
+            android:id="@+id/ButtonAddSave"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_weight="0"
+            android:background="@mipmap/queding" />
+
+    </FrameLayout>
+    <EditText
+        android:id="@+id/EditTextAddTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:textColor="#673AB7"
+        android:hint="请在此输入标题"
+        android:editable="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="作者："
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入作者"
+                android:id="@+id/EditTextAddAuthor"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EditTextAddContent"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:hint="请在此输入内容"
+            android:gravity="left|top"/>
+
+
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+        </ImageView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/take_photo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                android:background="@mipmap/takephoto">
+            </Button>
+
+            <Button
+                android:id="@+id/choose_from_album"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_weight="0"
+                android:background="@mipmap/xiangce">
+            </Button>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
